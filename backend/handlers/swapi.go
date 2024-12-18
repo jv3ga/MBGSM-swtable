@@ -27,3 +27,8 @@ func GetPeople(w http.ResponseWriter, r *http.Request) {
 	query, page, sortBy, order := getQueryStringValues(r)
 	utils.FetchFromSWAPI(w, "people", query, page, sortBy, order)
 }
+
+func GetSpecies(w http.ResponseWriter, r *http.Request) {
+	query, page, sortBy, order := getQueryStringValues(r)
+	utils.FetchFromSWAPI(w, "species", query, page, sortBy, order)
+}

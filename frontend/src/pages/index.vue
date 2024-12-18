@@ -44,6 +44,10 @@ export default {
         title: "Planets",
         url: "/api/planets",
       },
+      species: {
+        title: "Species",
+        url: "/api/species",
+      },
     },
   }),
 };

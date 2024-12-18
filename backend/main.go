@@ -54,6 +54,7 @@ func main() {
 	// endpoints
 	r.HandleFunc("/api/people", handlers.GetPeople).Methods("GET", "OPTIONS")
 	r.HandleFunc("/api/planets", handlers.GetPlanets).Methods("GET", "OPTIONS")
+	r.HandleFunc("/api/species", handlers.GetSpecies).Methods("GET", "OPTIONS")
 
 	http.Handle("/", enableCORS(allowedOrigin)(r))
 
