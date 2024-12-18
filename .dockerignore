@@ -1,0 +1,5 @@
+# Ignorar artefactos y archivos no necesarios
+backend
+node_modules
+dist
+*.log
