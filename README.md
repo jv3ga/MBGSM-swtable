@@ -42,7 +42,7 @@ Follow these steps to run the application from scratch using Docker Compose.
 ### Steps to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/jv3ga/swtable
+   git clone https://github.com/jv3ga/MBGSM-swtable.git
    cd swtable
    ```
 2. Build and start the containers:
