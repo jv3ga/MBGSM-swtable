@@ -33,6 +33,16 @@ export default defineConfig({
       },
     }),
   ],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: ["./tests/setup.ts"],
+    server: {
+      deps: {
+        inline: ['vuetify'],
+      },
+    },
+  },
   define: { 'process.env': {} },
   resolve: {
     alias: {
@@ -50,6 +60,14 @@ export default defineConfig({
   },
   server: {
     port: 6969,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8080',
+        changeOrigin: true,
+        secure: false,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      }
+    }
   },
   css: {
     preprocessorOptions: {
@@ -58,4 +76,5 @@ export default defineConfig({
       },
     },
   },
+
 })
