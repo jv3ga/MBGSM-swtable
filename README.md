@@ -85,6 +85,15 @@ Ensure all tests pass before deployment.
 - API performance.
 - High-quality, clean, and maintainable code.
 
+## Scalability example
+
+Checkout the branch `species_example`, you can have another fully functional tab with other data just doing:
+
+- Adding `species` endpoint to the backend
+- Adding key to the `swTable` object on the frontend
+
+
+
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
